@@ -81,6 +81,20 @@ void afterSheetWritingEnd();
  // Should contain resource cleanup logic
 	void close();
  ```
+### RowCellCounter
+Apache POI requires integer row number and cell number values while creating and accessing new cells in a Excel Sheet.Maintaining local counters for keeping track of current row and cell can be a headache.Code sprinkled with conditional counter++ can be difficult to debug. `RowCellCounter` class helps you avoid all that. It wraps current cell and row number generation.`GenericFileWriter` creates an instance of `RowCellCounter` and sets it in `WriteConfig` under `CONFIG_CURRENT_ROW_CELL_COUNTER` key. The class contains following methods:
+```java
+// Returns next value of the row number counter. 
+public int nextRowNum()
+
+// Returns next value for cell number counter.
+public int nextCellNum()
+
+//Resets internal counters to zero
+public void reset();
+```
+
+ 
 ### Sample use
 ```java
 TestHeaderWriter headerWriter = new TestHeaderWriter();
