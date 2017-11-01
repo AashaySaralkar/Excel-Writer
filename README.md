@@ -2,12 +2,6 @@
 
 This project is a good starting point for anybody wanting to generate an MS Excel containing headers and tabluar data using the Apache POI library. A typical MS Excel report contains headers and data.
 
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-
 ## Getting Started
 
 Use below instructions to get the project up and running on your local work station for reference purposes.
