@@ -19,7 +19,25 @@ public void close()
 [GenericFileWriter](https://github.com/aashaysaralkar/excel-writer/blob/master/src/main/java/com/ekam/utilities/excelwriter/impl/GenericFileWriter.java) implements [ExcelFileWriter](https://github.com/aashaysaralkar/excel-writer/blob/master/src/main/java/com/ekam/utilities/excelwriter/base/ExcelFileWriter.java) interface and provides an implementation of the `write(...)` method which delegates writing to implementations of [HeaderWriter](https://github.com/aashaysaralkar/excel-writer/blob/master/src/main/java/com/ekam/utilities/excelwriter/base/HeaderWriter.java) and [SheetDataWriter](https://github.com/aashaysaralkar/excel-writer/blob/master/src/main/java/com/ekam/utilities/excelwriter/base/SheetDataWriter.java) 
 
 ### WriteConfig
-Stores all the configurations for the writer and acts as a tranfer object to pass data between the header and content writer
+Stores all the configurations for the writer and acts as a tranfer object to pass data between the header and content writer. Data is stored as a key value pair. It contains some basic keys required for the GenericFileWriter implementation
+```java
+//key to store the absolute path to the location where the generated
+MS Excel file is written in the WriteConfig.Required.
+public static final String CONFIG_OUTPUT_FILE_LOCATION
+
+// key to store the name of the generated MS Excel file. Required.
+public static final String CONFIG_OUTPUT_FILE_NAME
+
+// key to retrieve the current Sheet being written to
+public static final String CONFIG_CURRENT_SHEET
+
+// key to retrieve the current workbook to which sheets are being added. Value set by GenericFileWriter
+public static final String CONFIG_WORKBOOK
+
+// key to retrieve the RowCellCounter instance. Value set by GenericFileWriter
+public static final String CONFIG_CURRENT_ROW_CELL_COUNTER
+
+```
 
 ### HeaderWriter
 Represents a component that is responsible for writing the header information
