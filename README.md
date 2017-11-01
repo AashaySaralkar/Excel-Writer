@@ -81,6 +81,17 @@ void afterSheetWritingEnd();
  // Should contain resource cleanup logic
 	void close();
  ```
+### Sample use
+```java
+TestHeaderWriter headerWriter = new TestHeaderWriter();
+TestDataWriter dataWriter = new TestDataWriter();
+GenericFileWriter genericFileWriter = new GenericFileWriter(headerWriter,dataWriter);
+WriteConfig config = new WriteConfig();
+genericFileWriter.write(config);
+genericFileWriter.close();
+```
+
+ 
  
 ### Prerequisites
 * JAVA 1.6 or higher
