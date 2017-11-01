@@ -1,6 +1,6 @@
 # Excel Writer
 
-This project is a good starting point for anybody wanting to generate an MS Excel containing headers and tabluar data using the Apache POI library. A typical MS Excel report contains headers and data.
+This project is a good starting point for anybody wanting to generate an MS Excel containing headers and tabluar data. Base implementation of writers use Apache POI.
 
 ## Use it!
 There are three basic intefaces [ExcelFileWriter](https://github.com/aashaysaralkar/excel-writer/blob/master/src/main/java/com/ekam/utilities/excelwriter/base/ExcelFileWriter.java), [HeaderWriter](https://github.com/aashaysaralkar/excel-writer/blob/master/src/main/java/com/ekam/utilities/excelwriter/base/HeaderWriter.java) and [SheetDataWriter](https://github.com/aashaysaralkar/excel-writer/blob/master/src/main/java/com/ekam/utilities/excelwriter/base/SheetDataWriter.java)
