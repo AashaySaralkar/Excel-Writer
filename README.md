@@ -121,7 +121,7 @@ genericFileWriter.close();
 ## Running the tests
 
 Execute the JUnit test cases in com/ekam/utilities/excelwriter/impl/GenericWriterTests.java
-It generates a sample Excel containing basic data about airports (Many thanks to [jbrooksuk/JSON-Airports](https://github.com/jbrooksuk/JSON-Airports)) at D:\\ExcelWriter location. Kindly change output path to your desired location at ```java config.put(WriteConfig.CONFIG_OUTPUT_FILE_LOCATION, "D:\\ExcelWriter");```
+It generates a sample Excel containing basic data about airports (Many thanks to [jbrooksuk/JSON-Airports](https://github.com/jbrooksuk/JSON-Airports)) at D:\\ExcelWriter location. Kindly change output path to your desired location at `config.put(WriteConfig.CONFIG_OUTPUT_FILE_LOCATION, "D:\\ExcelWriter");`
 
 ![Sample Excel](https://github.com/aashaysaralkar/excel-writer/blob/master/screenshots/sample%20excel.png)
 
