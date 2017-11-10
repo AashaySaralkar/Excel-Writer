@@ -7,6 +7,6 @@ public interface ExcelFileWriter {
 
 	public void write(WriteConfig writeConfig) throws FileNotFoundException, IOException;
 
-	public void close();
+	public void close() throws IOException;
 
 }
